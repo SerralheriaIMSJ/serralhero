@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serralheria IMSJ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    body { line-height: 1.6; color: #333; background-color: #fafafa; }
+    header { background: #1e1e1e; color: #fff; padding: 20px; text-align: center; }
+    header img { max-width: 200px; margin-bottom: 10px; }
+    nav { background: #333; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { color: #fff; text-decoration: none; padding: 15px 20px; }
+    nav a:hover { background: #555; }
+    .container { padding: 30px; max-width: 1200px; margin: auto; }
+    .section-title { font-size: 24px; margin-bottom: 20px; border-left: 5px solid #c00; padding-left: 10px; }
+    .services, .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .service, .portfolio-item { background: #f5f5f5; padding: 20px; border-radius: 8px; }
+    footer { background: #1e1e1e; color: #fff; text-align: center; padding: 20px; }
+    form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button { padding: 10px; background: #c00; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #900; }
+    iframe { width: 100%; height: 300px; border: 0; margin-top: 20px; }
+    address { font-style: normal; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo da Serralheria IMSJ" />
+    <h1>Serralheria Artesanal IMSJ</h1>
+    <p>Desde 1982 – Qualidade, Segurança e Compromisso</p>
+  </header>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="container">
+    <section id="servicos">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <div class="services">
+        <div class="service">Portões: Basculantes, Guilhotina, Correr e Abrir</div>
+        <div class="service">Portas: Chapa simples, dupla, segurança e artesanais</div>
+        <div class="service">Grades de Segurança: Ferro, Metalon, Xadrez</div>
+        <div class="service">Gradis e Guarda-Corpo sob medida</div>
+        <div class="service">Escadas: Marinheiro, Caracol, Reta</div>
+        <div class="service">Proteções e Serviços Artesanais</div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h2 class="section-title">Portfólio</h2>
+      <div class="portfolio">
+        <div class="portfolio-item">Foto Projeto 1</div>
+        <div class="portfolio-item">Foto Projeto 2</div>
+        <div class="portfolio-item">Foto Projeto 3</div>
+      </div>
+    </section>
+    <section id="contato">
+      <h2 class="section-title">Fale Conosco</h2>
+      <form>
+        <input type="text" placeholder="Nome (obrigatório)" required>
+        <input type="email" placeholder="E-mail">
+        <input type="tel" placeholder="Telefone (obrigatório)" required>
+        <input type="text" placeholder="Endereço">
+        <textarea placeholder="Mensagem" rows="4"></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+      <h2 class="section-title">Localização</h2>
+      <address>
+        <strong>Matriz:</strong><br>
+        Rua Conselheiro Pena, 205 – Sevilha B, Ribeirão das Neves / MG<br>
+        CEP: 33858-550<br>
+        Tel: (31) 3624-3293 / (31) 99105-2671<br>
+        Email: <a href="mailto:imsjserralheria@gmail.com">imsjserralheria@gmail.com</a>
+      </address>
+      <br />
+      <address>
+        <strong>Filial:</strong><br>
+        Rua Geraldo João Taranto, 44 – Bairro São Paulo, Matozinhos<br>
+        Email: <a href="mailto:contatofilial@imsj.com.br">contatofilial@imsj.com.br</a><br>
+        Instagram: <a href="https://instagram.com/serralheriaimsj" target="_blank">@serralheriaimsj</a>
+      </address>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Serralheria IMSJ – Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
